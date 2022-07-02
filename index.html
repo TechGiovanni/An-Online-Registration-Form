@@ -23,16 +23,15 @@
 </head>
 
 <body>
+  <!-- banner  -->
+  <section class="banner">
+    <h2 class="banner-text">The Code review</h2>
+  </section>
 
-  <head>
+  <div class="wrapper">
 
-
-    <section class="banner">
-      <h2 class="banner-text">The Code review</h2>
-    </section>
-
-
-    <div class="wrapper">
+    <head>
+      <!-- header signup for our newsletter  -->
       <section class="header">
         <h1 class="signup-title">Signup for our newsletter</h1>
         <p class="signup-text">
@@ -41,12 +40,10 @@
         <hr class="hr-thick">
         <hr class="hr-thin">
       </section>
-    </div>
-  </head>
+    </head>
 
+    <main>
 
-  <main>
-    <div class="wrapper">
 
 
       <section class="form">
@@ -60,13 +57,13 @@
               <p>
                 <label for="name">Full Name</label>
                 <br>
-                <input type="text" id="name" name="user-name">
+                <input type="text" id="name" name="user-name" placeholder="Required" class="required">
               </p>
 
               <p>
                 <label for="email">Email Address</label>
                 <br>
-                <input type="email" id="email" name="user-email">
+                <input type="email" id="email" name="user-email" placeholder="Required" class="required">
               </p>
               <p>
                 <label for="phone-number">Phone Number</label>
@@ -116,16 +113,21 @@
 
             <!-- Radio button HTML News  -->
             <fieldset>
-              <label for="html-news">Html News</label>
-              <input type="checkbox" name="coding-language-preference" id="html-news" value="html-language-preference">
+              <p>
+                <input type="checkbox" name="coding-language-preference" id="html-news"
+                  value="html-language-preference">
+                <label for="html-news">Html News</label>
+              </p>
 
-
-              <label for="css-news">CSS News</label>
-              <input type="checkbox" name="coding-language-preference" id="css-news" value="css-language-preference">
-
-              <label for="javascript-news">Javascript News</label>
-              <input type="checkbox" name="coding-language-preference" id="javascript-news"
-                value="javascript-language-preference">
+              <p>
+                <input type="checkbox" name="coding-language-preference" id="css-news" value="css-language-preference">
+                <label for="css-news">CSS News</label>
+              </p>
+              <p>
+                <input type="checkbox" name="coding-language-preference" id="javascript-news"
+                  value="javascript-language-preference">
+                <label for="javascript-news">Javascript News</label>
+              </p>
             </fieldset>
 
 
@@ -133,12 +135,15 @@
 
             <!-- Radio Button Newsletter Format  -->
             <fieldset>
-              <label for="format-html">Html</label>
-              <input type="radio" name="newsletter-format" id="format-html" value="html-format">
-              <br>
-              <label for="plain-text-format">Plain text</label>
-              <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
+              <p>
+                <input type="radio" name="newsletter-format" id="format-html" value="html-format">
+                <label for="format-html">Html</label>
+              </p>
 
+              <p>
+                <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
+                <label for="plain-text-format">Plain text</label>
+              </p>
             </fieldset>
 
             <label for="user-comments" class="comment-box">Other topics you's like to hear about</label>
@@ -158,10 +163,12 @@
         <p class="footer-text">Copyright The Code Review</p>
       </footer>
 
-    </div>
-  </main>
 
 
+
+    </main>
+
+  </div>
 
 </body>
 

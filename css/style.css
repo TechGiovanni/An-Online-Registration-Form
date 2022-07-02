@@ -16,6 +16,14 @@ html {
 
 body {
 	font-family: 'Lato', 'Lucida Sans', Geneva, Verdana, sans-serif;
+	line-height: 1.2;
+}
+
+.wrapper {
+	padding: 0 1rem;
+	max-width: 80rem;
+	margin: 0 auto;
+	/* Margin: 5rem auto; */
 }
 
 /* Banner  */
@@ -40,7 +48,7 @@ body {
 .signup-title {
 	font-weight: 900;
 	color: rgb(36, 43, 57);
-	font-size: 2.2rem;
+	font-size: 2rem;
 	letter-spacing: -.1px;
 	margin: 2.5rem 0 1rem;
 }
@@ -48,22 +56,19 @@ body {
 .signup-text {
 	color: #999;
 	margin-bottom: 3.6rem;
-	font-size: 1.7rem;
+	padding: 0 1.8rem;
+	font-size: 1.6rem;
 }
 
 .hr-thick {
-	margin-left: 4%;
-	margin-right: 4%;
 	margin-bottom: .15rem;
-	height: .3rem;
+	height: .36rem;
 	background-color: rgb(36, 43, 57);
 	color: rgb(36, 43, 57);
 	border: none;
 }
 .hr-thin {
-	margin-left: 4%;
-	margin-right: 4%;
-	height: .08rem;
+	height: .14rem;
 	background-color: rgb(36, 43, 57);
 	color: rgb(36, 43, 57);
 	border: none;
@@ -76,17 +81,26 @@ body {
 	margin-top: .8rem;
 }
 
+/* contact information  */
 .form-title {
 	font-weight: 900;
-	font-size: 1.1rem;
+	font-size: 2rem;
 }
 
-[class="form"] {
-	color: #999;
+[for] {
+	color: #888;
+}
+
+input[type],
+textarea {
+	background-color: rgb(218, 211, 211);
+}
+
+input[class="required"] {
+	text-align: end;
 }
 
 /* footer  */
-
 .footer {
 	text-align: center;
 }
