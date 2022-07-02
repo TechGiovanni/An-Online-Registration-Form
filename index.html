@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Stylesheet  -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>An Online Registration Form</title>
+</head>
+
+<body>
+
+  <head>
+
+
+    <section class="banner">
+      <h2 class="banner-text">The Code review</h2>
+    </section>
+
+
+    <div class="wrapper">
+      <section class="header">
+        <h1 class="signup-title">Signup for our newsletter</h1>
+        <p class="signup-text">
+          Get the latest news on how your code is doing right in your inbox
+        </p>
+        <hr class="hr-thick">
+        <hr class="hr-thin">
+      </section>
+    </div>
+  </head>
+
+
+  <main>
+    <div class="wrapper">
+
+
+      <section class="form">
+        <div class="form-box">
+
+          <form action="Post" method="post" class="form">
+
+            <fieldset>
+              <legend class="form-title"> Contact Information</legend>
+
+              <p>
+                <label for="name">Full Name</label>
+                <br>
+                <input type="text" id="name" name="user-name">
+              </p>
+
+              <p>
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" id="email" name="user-email">
+              </p>
+              <p>
+                <label for="phone-number">Phone Number</label>
+                <br>
+                <input type="tel" id="phone-number" name="user-phone-number">
+              </p>
+              <p>
+                <label for="street-address">Street Address</label>
+                <br>
+                <input type="text" name="user-street-address" id="street-address">
+              </p>
+              <p>
+                <label for="city">City</label>
+                <br>
+                <input type="text" name="user-city" id="city" placeholder="Choose State">
+
+                <!-- <select name="user-city" id="city">
+
+                  <option value="America">America</option>
+
+                </select> -->
+
+
+
+              </p>
+              <p>
+                <label for="zip-code">Zip Code</label>
+                <br>
+                <input type="text" name="user-zip-code" id="zip-code">
+              </p>
+            </fieldset>
+
+          </form>
+
+        </div>
+      </section>
+      <hr class="hr-thin">
+
+      <section class="newsletter">
+
+        <div class="newsletter-box">
+
+          <form action="index.html" method="post" class="form">
+
+            <legend class="newsletter-title">Newsletter</legend>
+            <p class="newsletter-text">Select the newsletters you would like to receive</p>
+
+            <!-- Radio button HTML News  -->
+            <fieldset>
+              <label for="html-news">Html News</label>
+              <input type="checkbox" name="coding-language-preference" id="html-news" value="html-language-preference">
+
+
+              <label for="css-news">CSS News</label>
+              <input type="checkbox" name="coding-language-preference" id="css-news" value="css-language-preference">
+
+              <label for="javascript-news">Javascript News</label>
+              <input type="checkbox" name="coding-language-preference" id="javascript-news"
+                value="javascript-language-preference">
+            </fieldset>
+
+
+            <p class="newsletter-text">Newsletter format</p>
+
+            <!-- Radio Button Newsletter Format  -->
+            <fieldset>
+              <label for="format-html">Html</label>
+              <input type="radio" name="newsletter-format" id="format-html" value="html-format">
+              <br>
+              <label for="plain-text-format">Plain text</label>
+              <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
+
+            </fieldset>
+
+            <label for="user-comments" class="comment-box">Other topics you's like to hear about</label>
+            <textarea name="user-comments" id="user-comments"></textarea>
+
+            <!-- Submit Button  -->
+            <button type="submit" class="submit-button">Sign Up</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+        <p class="footer-text">Copyright The Code Review</p>
+      </footer>
+
+    </div>
+  </main>
+
+
+
+</body>
+
+</html>
