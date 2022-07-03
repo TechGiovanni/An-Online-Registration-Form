@@ -51,34 +51,34 @@
 
           <form action="Post" method="post" class="form">
 
-            <fieldset>
+            <fieldset class="form-field">
               <legend class="form-title"> Contact Information</legend>
 
               <p>
                 <label for="name">Full Name</label>
-                <br>
-                <input type="text" id="name" name="user-name" placeholder="Required" class="required">
+
+                <input type="text" id="name" name="user-name" placeholder="Required" class="required input">
               </p>
 
               <p>
                 <label for="email">Email Address</label>
                 <br>
-                <input type="email" id="email" name="user-email" placeholder="Required" class="required">
+                <input type="email" id="email" name="user-email" placeholder="Required" class="required input">
               </p>
               <p>
                 <label for="phone-number">Phone Number</label>
                 <br>
-                <input type="tel" id="phone-number" name="user-phone-number">
+                <input type="tel" id="phone-number" name="user-phone-number" class="input">
               </p>
               <p>
                 <label for="street-address">Street Address</label>
                 <br>
-                <input type="text" name="user-street-address" id="street-address">
+                <input type="text" name="user-street-address" id="street-address" class="input">
               </p>
               <p>
                 <label for="city">City</label>
                 <br>
-                <input type="text" name="user-city" id="city" placeholder="Choose State">
+                <input type="text" name="user-city" id="city" placeholder="Choose State" class="input">
 
                 <!-- <select name="user-city" id="city">
 
@@ -92,7 +92,7 @@
               <p>
                 <label for="zip-code">Zip Code</label>
                 <br>
-                <input type="text" name="user-zip-code" id="zip-code">
+                <input type="text" name="user-zip-code" id="zip-code" class="zip input">
               </p>
             </fieldset>
 
@@ -108,11 +108,11 @@
 
           <form action="index.html" method="post" class="form">
 
-            <legend class="newsletter-title">Newsletter</legend>
-            <p class="newsletter-text">Select the newsletters you would like to receive</p>
+            <legend class="form-title form-field">Newsletter</legend>
+            <p class=" newsletter-text">Select the newsletters you would like to receive</p>
 
             <!-- Radio button HTML News  -->
-            <fieldset>
+            <fieldset class="form-field">
               <p>
                 <input type="checkbox" name="coding-language-preference" id="html-news"
                   value="html-language-preference">
@@ -136,8 +136,8 @@
             <!-- Radio Button Newsletter Format  -->
             <fieldset>
               <p>
-                <input type="radio" name="newsletter-format" id="format-html" value="html-format">
                 <label for="format-html">Html</label>
+                <input type="radio" name="newsletter-format" id="format-html" value="html-format">
               </p>
 
               <p>
@@ -146,12 +146,13 @@
               </p>
             </fieldset>
 
-            <label for="user-comments" class="comment-box">Other topics you's like to hear about</label>
+            <label for="user-comments" class="newsletter-text">Other topics you's like to hear about</label>
             <textarea name="user-comments" id="user-comments"></textarea>
 
             <!-- Submit Button  -->
-            <button type="submit" class="submit-button">Sign Up</button>
-
+            <section>
+              <button type="submit" class="btn default corner" value="submit">Sign Up</button>
+            </section>
           </form>
 
         </div>

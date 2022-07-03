@@ -7,7 +7,9 @@
 }
 
 :root {
-	--align: center;
+	--blue {
+		color: #39add1;
+	}
 }
 
 html {
@@ -21,7 +23,7 @@ body {
 
 .wrapper {
 	padding: 0 1rem;
-	max-width: 80rem;
+	max-width: 60rem;
 	margin: 0 auto;
 	/* Margin: 5rem auto; */
 }
@@ -77,27 +79,68 @@ body {
 /* Contact form  */
 
 .form-box {
-	padding: .6rem;
-	margin-top: .8rem;
+	margin: 1rem 0;
+}
+
+.form-field {
+	margin-top: 2.5rem;
 }
 
 /* contact information  */
 .form-title {
 	font-weight: 900;
 	font-size: 2rem;
+	margin-bottom: 1.5rem;
 }
 
+/* label text color  */
 [for] {
-	color: #888;
+	color: #555;
+}
+.input {
+	margin-bottom: 1rem;
 }
 
+/* Input field color  */
 input[type],
 textarea {
-	background-color: rgb(218, 211, 211);
+	background-color: #eff0f1;
+	border: none;
 }
 
-input[class="required"] {
+/* Full name and Email address  */
+/* .required placeholder {
 	text-align: end;
+	padding: 1rem;
+	font-size: 1rem; 
+}*/
+
+input {
+	width: 100%;
+	height: 3rem;
+}
+
+.required::placeholder {
+	color: #999;
+	text-align: end;
+	font-style: italic;
+	margin-right: 1rem;
+}
+
+::placeholder {
+	color: #999;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.zip {
+	width: 6rem;
+}
+
+/* Newsletter Section  */
+
+.newsletter-text {
+	color: #555;
 }
 
 /* footer  */
@@ -108,4 +151,35 @@ input[class="required"] {
 .footer-text {
 	color: #999;
 	font-size: 1.3rem;
+}
+
+/* Dry Classes */
+.corner {
+	border-radius: .4rem;
+}
+
+/* button  */
+
+.btn {
+	cursor: pointer;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #fff;
+	background-color: aqua;
+	padding: 0 2rem;
+	border: none;
+	width: 100%;
+	height: 6rem;
+}
+
+.btn:hover {
+	opacity: .75;
+}
+
+.default {
+	background-color: #52bab3;
+}
+
+.error {
+	background-color: #ff784f;
 }
