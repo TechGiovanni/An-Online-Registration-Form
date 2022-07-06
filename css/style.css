@@ -84,10 +84,11 @@ body {
 }
 
 label {
-	width: 8rem;
+	width: 10rem;
 	font-size: 1.2rem;
 	display: inline-block;
 	/* background-color: #52bab3; */
+	text-align: start;
 }
 
 .form-box {
@@ -124,6 +125,13 @@ textarea {
 	background-color: #eff0f1;
 	border: none;
 	border-radius: 3px;
+}
+
+p input {
+	display: inline-block;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .tinput {
@@ -169,6 +177,9 @@ textarea {
 .nw-list {
 	margin-left: .8rem;
 	margin-top: 1rem;
+}
+.zero-marg {
+	margin-top: 0;
 }
 
 /* Dry Classes */
