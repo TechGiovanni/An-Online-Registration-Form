@@ -18,7 +18,7 @@
   <!-- Stylesheet  -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style2.css"> -->
+
 
   <title>An Online Registration Form</title>
 </head>
@@ -34,170 +34,189 @@
     <head>
       <!-- header signup for our newsletter  -->
       <section class="header">
-        <h1 class="signup-title">Signup for our newsletter</h1>
-        <p class="signup-text">
+        <h1 class="header-title">Signup for our newsletter</h1>
+        <p class="header-text">
           Get the latest news on how your code is doing right in your inbox
         </p>
-        <hr class="hr-thick">
-        <hr class="hr-thin">
+
       </section>
     </head>
+
 
     <main>
 
 
+      <hr class="hr-thick">
 
-      <section class="form">
-        <div class="form-box">
-
-          <form action="Post" method="post" class="form">
-
-            <fieldset class="form-field">
-              <legend class="form-title"> Contact Information</legend>
-
-              <p>
-                <label for="name" class="cont-info">Full Name</label>
-
-                <input type="text" id="name" name="user-name" placeholder="Required" class="required input tinput"
-                  autofocus>
-              </p>
-
-              <p>
-                <label for="email" class="cont-info">Email Address</label>
-                <br>
-                <input type="email" id="email" name="user-email" placeholder="Required" class="required input tinput">
-              </p>
-              <p>
-                <label for="phone-number" class="cont-info">Phone Number</label>
-                <br>
-                <input type="tel" id="phone-number" name="user-phone-number" class="input tinput">
-              </p>
-              <p>
-                <label for="street-address" class="cont-info">Street Address</label>
-                <br>
-                <input type="text" name="user-street-address" id="street-address" class="input tinput">
-              </p>
-              <p>
-                <label for="state" class="cont-info">City</label>
-
-                <input type="text" name="user-state" id="state" class="input tinput">
-              </p>
-
-
-              <div class="custom-select">
-                <select>
-                  <option value="Afghanistan">Afghanistan</option>
-                  <option value="">Albania</option>
-                  <option value=""> Algeria</option>
-                  <option value="">Andorra</option>
-                  <option value="">Angola</option>
-                  <option value="">Antigua and Barbuda </option>
-                  <option value="">Argentina </option>
-                  <option value="">Armenia</option>
-                  <option value="">Australia</option>
-                  <option value="">Austria</option>
-                  <option value="">Azerbaijan</option>
-                  <option value="">Bahamas</option>
-                  <option value="">Bahrain</option>
-                  <option value="">Bangladesh</option>
-                  <option value="">Barbados</option>
-                  <option value="">Belarus</option>
-
-                </select>
-                <span class="custom-arrow"></span>
-
-                <!-- <label for="city" class="cont-info">State</label>
-                <br>
-
-                <input type="text" name="user-city" id="city" placeholder="Choose State" class="input tinput"> -->
-
-
-              </div>
-
-
-
-
-
-              <p>
-                <label for="zip-code" class="cont-info">Zip Code</label>
-                <br>
-                <input type="text" name="user-zip-code" id="zip-code" class="zip input">
-              </p>
-            </fieldset>
-
-          </form>
-
-        </div>
-      </section>
       <hr class="hr-thin">
+
+      <section class="back-color">
+        <section class="form">
+          <div class="form-box">
+
+            <form action="Post" method="GET" class="form">
+
+              <fieldset class="form-field">
+                <legend class="form-titles"> Contact Information</legend>
+
+                <!-- full name  -->
+                <div class="field-box">
+                  <label for="name" class="cont-info">Full Name</label>
+
+                  <input type="text" autofocus id="name" name="user-name" placeholder="Required"
+                    aria-label="Search through site content" class="required input tinput" required>
+                </div>
+                <!-- Email  -->
+                <div class="field-box">
+                  <label for="email" class="cont-info cont-info--mrgbtm">Email Address</label>
+
+                  <input type="email" id="email" name="user-email" placeholder="Required" class="required input tinput"
+                    required>
+                </div>
+                <!-- Phone Number  -->
+                <div class="field-box">
+                  <label for="phone-number" class="cont-info cont-info--mrgbtm">Phone
+                    Number</label>
+
+                  <input type=" tel" id="phone-number" name="user-phone-number" class="required input tinput"
+                    placeholder="( _ _ _ - _ _ _ - _ _ _ _ )">
+                </div>
+                <!-- Street Address -->
+                <div class="field-box">
+                  <label for="street-address" class="cont-info cont-info--mrgbtm">Street Address</label>
+
+                  <input type="text" name="user-street-address" id="street-address" class="input tinput" required>
+                </div>
+
+                <!-- City  -->
+                <div class="field-box">
+                  <label for="state" class="cont-info cont-info--mrgbtm">City</label>
+
+                  <input type="text" name="user-state" id="state" class="input tinput" required>
+                </div>
+
+                <!-- State  -->
+                <div class="field-box ">
+                  <label for="state" class="cont-info cont-info--mrgbtm">State</label>
+
+                  <select class="select-field " required>
+                    <option value="">Choose State</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="">Albania</option>
+                    <option value=""> Algeria</option>
+                    <option value="">Andorra</option>
+                    <option value="">Angola</option>
+                    <option value="">Antigua and Barbuda </option>
+                    <option value="">Argentina </option>
+                    <option value="">Armenia</option>
+                    <option value="">Australia</option>
+                    <option value="">Austria</option>
+                    <option value="">Azerbaijan</option>
+                    <option value="">Bahamas</option>
+                    <option value="">Bahrain</option>
+                    <option value="">Bangladesh</option>
+                    <option value="">Barbados</option>
+                    <option value="">Belarus</option>
+
+                  </select>
+
+
+
+
+                </div>
+
+
+
+                <!-- zip code  -->
+                <div class="field-box ">
+
+                  <label for="zip-code" class="cont-info cont-info--mrgbtm cont-info--2">Zip Code</label>
+
+                  <input type="text" name="zip-code" id="zip-code" class="zip input field-box--zip tinput"
+                    placeholder="6 digits" size="10" required>
+
+                </div>
+              </fieldset>
+
+            </form>
+          </div>
+        </section>
+      </section>
+      <hr class="hr-thin hr-thin--newsletter">
 
       <!-- Newsletter Section  -->
 
-      <section class="newsletter">
+      <section class="bottom">
+        <section class="newsletter">
 
-        <div class="newsletter-box">
+          <div class="newsletter-box">
 
-          <form action="index.html" method="GET" class="form">
+            <form action="index.html" method="GET" class="form">
 
-            <legend class="form-title form-field">Newsletter</legend>
-            <p class=" newsletter-text width">Select the newsletters you would like to receive</p>
+              <legend class="form-titles form-field">Newsletter</legend>
 
-            <!-- Radio button HTML News  -->
-            <fieldset class="form-field">
-              <p>
-                <input type="checkbox" name="coding-language-preference" id="html-news"
-                  value="html-language-preference">
-                <label for="html-news" class="nw-list zero-marg">Html News</label>
-              </p>
+              <p class=" newsletter-text width">Select the newsletters you would like to receive</p>
 
-              <p>
-                <input type="checkbox" name="coding-language-preference" id="css-news" value="css-language-preference">
-                <label for="css-news" class="nw-list">CSS News</label>
-              </p>
-              <p>
-                <input type="checkbox" name="coding-language-preference" id="javascript-news"
-                  value="javascript-language-preference">
-                <label for="javascript-news" class="nw-list nw-list--mod2">Javascript News</label>
-              </p>
-            </fieldset>
+              <!-- Radio button HTML News  -->
+              <fieldset class="form-field">
+                <div class="radio-box marg-bottm">
+                  <input type="checkbox" name="coding-language-preference" id="html-news"
+                    value="html-language-preference">
+                  <label for="html-news" class="nw-list zero-marg">HTML News</label>
+                </div>
+
+                <div class="radio-box marg-bottm">
+                  <input type="checkbox" name="coding-language-preference" id="css-news"
+                    value="css-language-preference">
+                  <label for="css-news" class="nw-list">CSS News</label>
+                </div>
+                <div class="radio-box">
+                  <input type="checkbox" name="coding-language-preference" id="javascript-news"
+                    value="javascript-language-preference">
+                  <label for="javascript-news" class="nw-list nw-list--mod2">Javascript News</label>
+                </div>
+              </fieldset>
 
 
-            <p class="newsletter-text">Newsletter format</p>
+              <p class="newsletter-text">Newsletter format</p>
 
-            <!-- Radio Button Newsletter Format  -->
-            <fieldset class="form-field">
-              <p>
-                <input type="radio" name="newsletter-format" id="format-html" value="html-format">
-                <label for="format-html" class="nw-list zero-marg">HTML</label>
-              </p>
+              <!-- Radio Button Newsletter Format  -->
+              <fieldset class="form-field">
+                <div class="radio-box marg-bottm">
+                  <input type="radio" name="newsletter-format" id="format-html" value="html-format">
+                  <label for="format-html" class="nw-list zero-marg">HTML</label>
+                </div>
 
-              <p>
-                <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
-                <label for="plain-text-format" class="nw-list nw-list--mod ">Plain text</label>
-              </p>
-            </fieldset>
+                <div class="radio-box">
+                  <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
+                  <label for="plain-text-format" class="nw-list nw-list--mod ">Plain text</label>
+                </div>
+              </fieldset>
 
-            <p for="user-comments" class="newsletter-text text-mod">Other topics you's like to hear about</p>
 
-            <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
+              <!-- text Area Box -->
+              <p for="user-comments" class="newsletter-text text-mod">Other topics you's like to hear about</p>
 
-            <!-- Submit Button  -->
-            <section>
-              <button type="submit" class="btn default corner" value="submit">Sign Up</button>
-            </section>
-          </form>
+              <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
+              <!-- rows="5" cols="39" -->
 
-        </div>
+              <!-- Submit Button  -->
+              <section>
+                <button type="submit" class="btn corner" value="submit">Sign Up</button>
+              </section>
+            </form>
+
+          </div>
+        </section>
+
+
+
+        <footer class="footer">
+          <p class="footer-text">Copyright The Code Review</p>
+        </footer>
+
+
       </section>
-
-
-
-      <footer class="footer">
-        <p class="footer-text">Copyright The Code Review</p>
-      </footer>
-
-
-
 
     </main>
 
