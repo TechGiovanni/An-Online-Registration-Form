@@ -22,9 +22,9 @@
 	--input-color: #e6e6e6;
 }
 
-html {
+/* html {
 	font-size: 10px;
-}
+} */
 
 .nav-links {
 	list-style: none;
@@ -39,9 +39,10 @@ html {
 	hyphens: auto;
 	height: 100vh;
 	box-sizing: border-box;
+	font-size: 10px;
 }
 
-h2 {
+/* h2 {
 	font-size: 60px;
 	font-weight: 500;
 }
@@ -57,12 +58,13 @@ h5 {
 }
 h6 {
 	font-size: 14px;
-}
+} */
 
 .wrapper {
 	padding: 0 1rem;
 	max-width: 60rem;
 	margin: 0 auto;
+	font-size: 1.6rem;
 }
 
 /* ++++++++++++++++++++++++++++++++++  */
@@ -74,7 +76,6 @@ h6 {
 	padding: 2rem;
 	text-align: center;
 	background-color: var(--banner-color);
-	height: 6rem;
 }
 
 .banner-text {
@@ -106,7 +107,7 @@ h6 {
 .back-color {
 	background-color: #a4d6ff;
 	margin: 0 5px;
-	padding: 0px 2px 2px;
+	padding: 0px 2px 2px 2px;
 	border-radius: 3px;
 }
 .bottom {
@@ -114,23 +115,20 @@ h6 {
 }
 
 /* Horizontal Rule  */
-.hr-thick {
-	margin-bottom: .15rem;
-	height: .36rem;
+
+hr {
 	background-color: var(--horizontal-rule);
-	color: var(--horizontal-rule);
 	border: none;
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.hr-thick {
+	height: .36rem;
+	margin-bottom: .15rem;
+}
 .hr-thin {
 	height: .14rem;
-	background-color: var(--horizontal-rule);
-	color: var(--horizontal-rule);
-	border: none;
 	margin-bottom: 2rem;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
 .hr-thin--newsletter {
@@ -163,9 +161,8 @@ h6 {
 .cont-info {
 	margin-bottom: .9rem;
 	color: var(--main-text);
-	font-size: 1.6rem;
 	text-align: start;
-	width: 15rem;
+	width: 18rem;
 }
 
 .cont-info--mrgbtm {
@@ -180,28 +177,28 @@ h6 {
 }
 
 /* input Styling  */
-input.input {
-	padding: 15px;
+.input {
 	border: none;
 	background-color: var(--input-color);
 	border-radius: 3px;
 	width: 100%;
+	height: 5rem;
 	border-color: #000;
 }
 
 .field-box--zip {
 	display: inline-block;
 	max-width: 15rem;
+	padding: 1rem;
 }
 
 select {
-	padding: 15px;
 	border: none;
 	background-color: var(--input-color);
 	color: #999;
 	border-radius: 4px;
 	width: 100%;
-	height: ;
+	height: 5rem;
 }
 option:not(:first-of-type) {
 	color: black;
@@ -226,13 +223,12 @@ input:focus {
 	color: var(--main-text);
 	margin-top: 2.3rem;
 	margin-bottom: 1.1rem;
-	font-size: 1.6rem;
 }
 
 .radio-box {
 	display: flex;
 	flex-direction: row;
-	gap: .8rem;
+	gap: 0.8rem;
 	font-size: 1.6rem;
 	color: var(--main-text);
 }
@@ -245,7 +241,6 @@ textarea {
 	display: block;
 	margin-bottom: 2rem;
 	letter-spacing: 1px;
-	padding: 10px;
 	max-width: 100%;
 	line-height: 1.5;
 	border: none;
@@ -263,7 +258,6 @@ textarea {
 	font-weight: 400;
 	color: #fff;
 	background-color: #52bab3;
-	padding: 0 2rem;
 	border: none;
 	width: 100%;
 	height: 6rem;
@@ -304,11 +298,10 @@ textarea {
 @media screen and (min-width: 48em) {
 	.field-box {
 		flex-direction: row;
-		justify-content: space-between;
 		margin-bottom: 1rem;
 		align-items: center;
-		justify-content: start;
-		width: 100%;
+		justify-content: flex-start;
+		max-width: 100%;
 	}
 	.field-box--zip {
 		display: inline-block;
@@ -316,6 +309,6 @@ textarea {
 	}
 
 	.cont-info--2 {
-		width: 12rem;
+		max-width: 13.6rem;
 	}
 }

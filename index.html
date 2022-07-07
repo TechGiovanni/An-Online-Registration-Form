@@ -31,7 +31,7 @@
 
   <div class="wrapper">
 
-    <head>
+    <header>
       <!-- header signup for our newsletter  -->
       <section class="header">
         <h1 class="header-title">Signup for our newsletter</h1>
@@ -40,7 +40,7 @@
         </p>
 
       </section>
-    </head>
+    </header>
 
 
     <main>
@@ -50,8 +50,8 @@
 
       <hr class="hr-thin">
 
-      <section class="back-color">
-        <section class="form">
+      <div class="back-color">
+        <div class="form">
           <div class="form-box">
 
             <form action="Post" method="GET" class="form">
@@ -78,7 +78,7 @@
                   <label for="phone-number" class="cont-info cont-info--mrgbtm">Phone
                     Number</label>
 
-                  <input type=" tel" id="phone-number" name="user-phone-number" class="required input tinput"
+                  <input type="tel" id="phone-number" name="user-phone-number" class="required input tinput"
                     placeholder="( _ _ _ - _ _ _ - _ _ _ _ )">
                 </div>
                 <!-- Street Address -->
@@ -140,23 +140,18 @@
 
             </form>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
       <hr class="hr-thin hr-thin--newsletter">
 
       <!-- Newsletter Section  -->
 
-      <section class="bottom">
+      <div class="bottom">
         <section class="newsletter">
-
+          <h2 class="form-titles form-field">Newsletter</h2>
           <div class="newsletter-box">
-
+            <p class=" newsletter-text width">Select the newsletters you would like to receive</p>
             <form action="index.html" method="GET" class="form">
-
-              <legend class="form-titles form-field">Newsletter</legend>
-
-              <p class=" newsletter-text width">Select the newsletters you would like to receive</p>
-
               <!-- Radio button HTML News  -->
               <fieldset class="form-field">
                 <div class="radio-box marg-bottm">
@@ -195,17 +190,16 @@
 
 
               <!-- text Area Box -->
-              <p for="user-comments" class="newsletter-text text-mod">Other topics you's like to hear about</p>
+              <p class="newsletter-text text-mod">Other topics you's like to hear about</p>
 
               <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
               <!-- rows="5" cols="39" -->
 
               <!-- Submit Button  -->
-              <section>
+              <div>
                 <button type="submit" class="btn corner" value="submit">Sign Up</button>
-              </section>
+              </div>
             </form>
-
           </div>
         </section>
 
@@ -216,7 +210,7 @@
         </footer>
 
 
-      </section>
+      </div>
 
     </main>
 
