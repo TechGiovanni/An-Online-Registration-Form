@@ -105,11 +105,12 @@ h6 {
 
 .back-color {
 	background-color: #a4d6ff;
-	padding: 10px;
+	margin: 0 5px;
+	padding: 0px 2px 2px;
 	border-radius: 3px;
 }
 .bottom {
-	padding: 10px;
+	padding: 5px;
 }
 
 /* Horizontal Rule  */
@@ -119,6 +120,8 @@ h6 {
 	background-color: var(--horizontal-rule);
 	color: var(--horizontal-rule);
 	border: none;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .hr-thin {
 	height: .14rem;
@@ -126,6 +129,8 @@ h6 {
 	color: var(--horizontal-rule);
 	border: none;
 	margin-bottom: 2rem;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .hr-thin--newsletter {
