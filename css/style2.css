@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Lato', 'Lucida Sans', Geneva, Verdana, sans-serif;
+	line-height: 1.2;
+}
+
+.wrapper {
+	padding: 0 1rem;
+	max-width: 60rem;
+	margin: 0 auto;
+	/* Margin: 5rem auto; */
+}
+
+/* Banner  */
+.banner {
+	padding: 2rem;
+	text-align: center;
+	background-color: rgb(38, 44, 55);
+	height: 6rem;
+}
+
+.banner-text {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 2rem;
+	color: whitesmoke;
+}
+
+/* Header  */
+.header {
+	text-align: center;
+}
+.signup-title {
+	font-weight: 900;
+	color: rgb(36, 43, 57);
+	font-size: 2rem;
+	letter-spacing: -.1px;
+	margin: 2.5rem 0 1rem;
+}
+
+.signup-text {
+	color: #999;
+	margin-bottom: 3.6rem;
+	padding: 0 1.8rem;
+	font-size: 1.6rem;
+}
+
+.hr-thick {
+	margin-bottom: .15rem;
+	height: .36rem;
+	background-color: rgb(36, 43, 57);
+	color: rgb(36, 43, 57);
+	border: none;
+}
+.hr-thin {
+	height: .14rem;
+	background-color: rgb(36, 43, 57);
+	color: rgb(36, 43, 57);
+	border: none;
+}
