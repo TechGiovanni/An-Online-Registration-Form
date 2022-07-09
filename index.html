@@ -101,7 +101,7 @@
                 <label for="state" class="cont-info cont-info--mrgbtm">State</label>
 
                 <select class="select-field " required>
-                  <option value="country">Choose State</option>
+                  <option value="">Choose State</option>
                   <option value="country">Afghanistan</option>
                   <option value="country">Albania</option>
                   <option value="country"> Algeria</option>
@@ -149,8 +149,8 @@
 
                 <label for="zip-code" class="cont-info cont-info--mrgbtm cont-info--2">Zip Code</label>
 
-                <input type="text" name="zip-code" id="zip-code" class="zip input field-box--zip tinput"
-                  placeholder="6 digits" size="10" required>
+                <input type="text" name="zip-code" id="zip-code" class="zip input field-box--zip" placeholder="6 digits"
+                  size="10" required>
 
               </div>
             </fieldset>
@@ -205,9 +205,10 @@
 
 
                 <!-- text Area Box -->
-                <p class="newsletter-text text-mod">Other topics you's like to hear about</p>
+                <label class="newsletter-text text-mod">Other topics you's like to hear about</label>
 
-                <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
+                <textarea name="user-comments" placeholder="Comment text..." id="user-comments"
+                  class="textarea"></textarea>
                 <!-- rows="5" cols="39" -->
 
                 <!-- Submit Button  -->

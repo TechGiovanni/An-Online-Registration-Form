@@ -19,7 +19,7 @@
 	--main-text: #777;
 	--placeholder-color: #777;
 	--horizontal-rule: #242b39;
-	--input-color: #e6e6e6;
+	--input-color: #ededed;
 }
 
 /* html {
@@ -154,9 +154,6 @@ hr {
 .field-box {
 	display: flex;
 	flex-direction: column;
-
-	/* flex-direction: row;
-	justify-content: space-between; */
 }
 
 .cont-info--mrgbtm {
@@ -189,6 +186,7 @@ hr {
 	width: 100%;
 	height: 5rem;
 	border-color: #000;
+	padding: 1rem;
 }
 
 .field-box--zip {
@@ -200,7 +198,7 @@ hr {
 select {
 	border: none;
 	background-color: var(--input-color);
-	color: #999;
+	color: var(--header-title);
 	border-radius: 4px;
 	width: 100%;
 	height: 5rem;
@@ -210,9 +208,11 @@ option:not(:first-of-type) {
 	color: black;
 }
 
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
 	background-color: #fff;
-	opacity: .5;
+	opacity: .6;
 }
 
 /* ++++++++++++++++++++++++++++++++++  */
@@ -223,6 +223,10 @@ input:focus {
 	color: var(--main-text);
 	margin-top: 2.3rem;
 	margin-bottom: 1.1rem;
+}
+
+.text-mod {
+	display: block;
 }
 
 .radio-box {
@@ -247,6 +251,7 @@ textarea {
 	background-color: var(--input-color);
 	height: 8rem;
 	width: 100%;
+	padding: 1rem;
 }
 
 /* ++++++++++++++++++++++++++++++++++  */
@@ -305,7 +310,7 @@ textarea {
 	}
 	.field-box--zip {
 		display: inline-block;
-		max-width: 20rem;
+		max-width: 25%;
 	}
 
 	.cont-info--2 {
