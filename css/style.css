@@ -298,8 +298,8 @@ textarea {
 /*    Media Query Section      */
 /* ++++++++++++++++++++++++++++++++++  */
 
-/* 768px //16px = 48 */
-/* 960px //16px = 60 */
+/* 768px //16px = 48em */
+/* 960px //16px = 60em */
 @media screen and (min-width: 48em) {
 	.field-box {
 		flex-direction: row;
