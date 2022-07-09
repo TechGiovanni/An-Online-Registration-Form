@@ -50,183 +50,184 @@
 
       <hr class="hr-thin">
 
-      <div class="back-color">
-        <div class="form">
-          <div class="form-box">
 
-            <form action="index.html" method="GET" class="form">
+      <div class="form">
+        <div class="form-box">
 
-              <fieldset class="form-field">
-                <legend class="form-titles"> Contact Information</legend>
+          <!-- Form  -->
+          <form action="index.html" method="GET" class="form" id="submit">
 
-                <!-- full name  -->
-                <div class="field-box">
-                  <label for="name" class="cont-info">Full Name</label>
+            <fieldset class="form-field">
+              <legend class="form-titles">Contact Information</legend>
 
-                  <input type="text" autofocus id="name" name="user-name" placeholder="Required"
-                    aria-label="Search through site content" class="required input tinput" required>
+              <!-- full name  -->
+              <div class="field-box">
+                <label for="name" class="cont-info">Full Name</label>
+
+                <input type="text" autofocus id="name" name="user-name" placeholder="Required"
+                  aria-label="Search through site content" class="required input tinput" required>
+              </div>
+              <!-- Email  -->
+              <div class="field-box">
+                <label for="email" class="cont-info cont-info--mrgbtm">Email Address</label>
+
+                <input type="email" id="email" name="user-email" placeholder="Required" class="required input tinput"
+                  required>
+              </div>
+              <!-- Phone Number  -->
+              <div class="field-box">
+                <label for="phone-number" class="cont-info cont-info--mrgbtm">Phone
+                  Number</label>
+
+                <input type="tel" id="phone-number" name="user-phone-number" class="required input tinput"
+                  placeholder="( _ _ _ - _ _ _ - _ _ _ _ )">
+              </div>
+              <!-- Street Address -->
+              <div class="field-box">
+                <label for="street-address" class="cont-info cont-info--mrgbtm">Street Address</label>
+
+                <input type="text" name="user-street-address" id="street-address" class="input tinput" required>
+              </div>
+
+              <!-- City  -->
+              <div class="field-box">
+                <label for="state" class="cont-info cont-info--mrgbtm">City</label>
+
+                <input type="text" name="user-state" id="state" class="input tinput" required>
+              </div>
+
+              <!-- State  -->
+              <div class="field-box ">
+                <label for="state" class="cont-info cont-info--mrgbtm">State</label>
+
+                <select class="select-field " required>
+                  <option value="country">Choose State</option>
+                  <option value="country">Afghanistan</option>
+                  <option value="country">Albania</option>
+                  <option value="country"> Algeria</option>
+                  <option value="country">Andorra</option>
+                  <option value="country">Angola</option>
+                  <option value="country">Antigua and Barbuda </option>
+                  <option value="country">Argentina </option>
+                  <option value="country">Armenia</option>
+                  <option value="country">Australia</option>
+                  <option value="country">Austria</option>
+                  <option value="country">Azerbaijan</option>
+                  <option value="country">Bahamas</option>
+                  <option value="country">Bahrain</option>
+                  <option value="country">Bangladesh</option>
+                  <option value="country">Barbados</option>
+                  <option value="country">Belarus</option>
+                  <option value="country">Belgium</option>
+                  <option value="country">Belize</option>
+                  <option value="country">Benin</option>
+                  <option value="country">Bhutan</option>
+                  <option value="country">Bolivia</option>
+                  <option value="country">Bosnia and Herzegovina</option>
+                  <option value="country">Botswana</option>
+                  <option value="country">Brazil</option>
+                  <option value="country">Brunei</option>
+                  <option value="country">Bulgaria</option>
+                  <option value="country">Burkina Faso </option>
+                  <option value="country">Burundi</option>
+                  <option value="country">Côte d'Ivoire </option>
+                  <option value="country">Cabo Verde </option>
+                  <option value="country">Cambodia</option>
+                  <option value="country">Cameroon</option>
+                  <option value="country">Canada</option>
+                  <option value="country">Central African Republic </option>
+                  <option value="country">Chad</option>
+                </select>
+
+
+              </div>
+
+
+
+              <!-- zip code  -->
+              <div class="field-box ">
+
+                <label for="zip-code" class="cont-info cont-info--mrgbtm cont-info--2">Zip Code</label>
+
+                <input type="text" name="zip-code" id="zip-code" class="zip input field-box--zip tinput"
+                  placeholder="6 digits" size="10" required>
+
+              </div>
+            </fieldset>
+
+
+
+
+            <hr class="hr-thin hr-thin--newsletter">
+
+            <!-- Newsletter Section  -->
+
+
+            <div class="newsletter">
+              <div class="newsletter-box">
+
+                <!-- Radio button HTML News  -->
+                <fieldset class="form-field">
+                  <legend class="form-titles form-field">Newsletter</legend>
+
+                  <p class=" newsletter-text width">Select the newsletters you would like to receive</p>
+                  <div class="radio-box marg-bottm">
+                    <input type="checkbox" name="coding-language-preference" id="html-news"
+                      value="html-language-preference">
+                    <label for="html-news" class="nw-list zero-marg">HTML News</label>
+                  </div>
+
+                  <div class="radio-box marg-bottm">
+                    <input type="checkbox" name="coding-language-preference" id="css-news"
+                      value="css-language-preference">
+                    <label for="css-news" class="nw-list">CSS News</label>
+                  </div>
+                  <div class="radio-box">
+                    <input type="checkbox" name="coding-language-preference" id="javascript-news"
+                      value="javascript-language-preference">
+                    <label for="javascript-news" class="nw-list nw-list--mod2">Javascript News</label>
+                  </div>
+
+                  <p class="newsletter-text">Newsletter format</p>
+
+                  <!-- Radio Button Newsletter Format  -->
+
+                  <div class="radio-box marg-bottm">
+                    <input type="radio" name="newsletter-format" id="format-html" value="html-format">
+                    <label for="format-html" class="nw-list zero-marg">HTML</label>
+                  </div>
+
+                  <div class="radio-box">
+                    <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
+                    <label for="plain-text-format" class="nw-list nw-list--mod ">Plain text</label>
+                  </div>
+                </fieldset>
+
+
+                <!-- text Area Box -->
+                <p class="newsletter-text text-mod">Other topics you's like to hear about</p>
+
+                <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
+                <!-- rows="5" cols="39" -->
+
+                <!-- Submit Button  -->
+                <div>
+                  <button type="submit" class="btn corner" value="submit" name="submit">Sign Up</button>
                 </div>
-                <!-- Email  -->
-                <div class="field-box">
-                  <label for="email" class="cont-info cont-info--mrgbtm">Email Address</label>
 
-                  <input type="email" id="email" name="user-email" placeholder="Required" class="required input tinput"
-                    required>
-                </div>
-                <!-- Phone Number  -->
-                <div class="field-box">
-                  <label for="phone-number" class="cont-info cont-info--mrgbtm">Phone
-                    Number</label>
+              </div>
+            </div>
 
-                  <input type="tel" id="phone-number" name="user-phone-number" class="required input tinput"
-                    placeholder="( _ _ _ - _ _ _ - _ _ _ _ )">
-                </div>
-                <!-- Street Address -->
-                <div class="field-box">
-                  <label for="street-address" class="cont-info cont-info--mrgbtm">Street Address</label>
-
-                  <input type="text" name="user-street-address" id="street-address" class="input tinput" required>
-                </div>
-
-                <!-- City  -->
-                <div class="field-box">
-                  <label for="state" class="cont-info cont-info--mrgbtm">City</label>
-
-                  <input type="text" name="user-state" id="state" class="input tinput" required>
-                </div>
-
-                <!-- State  -->
-                <div class="field-box ">
-                  <label for="state" class="cont-info cont-info--mrgbtm">State</label>
-
-                  <select class="select-field " required>
-                    <option value="country">Choose State</option>
-                    <option value="country">Afghanistan</option>
-                    <option value="country">Albania</option>
-                    <option value="country"> Algeria</option>
-                    <option value="country">Andorra</option>
-                    <option value="country">Angola</option>
-                    <option value="country">Antigua and Barbuda </option>
-                    <option value="country">Argentina </option>
-                    <option value="country">Armenia</option>
-                    <option value="country">Australia</option>
-                    <option value="country">Austria</option>
-                    <option value="country">Azerbaijan</option>
-                    <option value="country">Bahamas</option>
-                    <option value="country">Bahrain</option>
-                    <option value="country">Bangladesh</option>
-                    <option value="country">Barbados</option>
-                    <option value="country">Belarus</option>
-                    <option value="country">Belgium</option>
-                    <option value="country">Belize</option>
-                    <option value="country">Benin</option>
-                    <option value="country">Bhutan</option>
-                    <option value="country">Bolivia</option>
-                    <option value="country">Bosnia and Herzegovina</option>
-                    <option value="country">Botswana</option>
-                    <option value="country">Brazil</option>
-                    <option value="country">Brunei</option>
-                    <option value="country">Bulgaria</option>
-                    <option value="country">Burkina Faso </option>
-                    <option value="country">Burundi</option>
-                    <option value="country">Côte d'Ivoire </option>
-                    <option value="country">Cabo Verde </option>
-                    <option value="country">Cambodia</option>
-                    <option value="country">Cameroon</option>
-                    <option value="country">Canada</option>
-                    <option value="country">Central African Republic </option>
-                    <option value="country">Chad</option>
-                  </select>
-
-
-                </div>
-
-
-
-                <!-- zip code  -->
-                <div class="field-box ">
-
-                  <label for="zip-code" class="cont-info cont-info--mrgbtm cont-info--2">Zip Code</label>
-
-                  <input type="text" name="zip-code" id="zip-code" class="zip input field-box--zip tinput"
-                    placeholder="6 digits" size="10" required>
-
-                </div>
-              </fieldset>
-
-            </form>
-          </div>
+          </form>
         </div>
       </div>
-      <hr class="hr-thin hr-thin--newsletter">
 
-      <!-- Newsletter Section  -->
-
-      <div class="bottom">
-        <section class="newsletter">
-          <h2 class="form-titles form-field">Newsletter</h2>
-          <div class="newsletter-box">
-            <form action="index.html" method="GET" class="form">
-              <!-- Radio button HTML News  -->
-              <fieldset class="form-field">
-                <legend class=" newsletter-text width">Select the newsletters you would like to receive</legend>
-                <div class="radio-box marg-bottm">
-                  <input type="checkbox" name="coding-language-preference" id="html-news"
-                    value="html-language-preference">
-                  <label for="html-news" class="nw-list zero-marg">HTML News</label>
-                </div>
-
-                <div class="radio-box marg-bottm">
-                  <input type="checkbox" name="coding-language-preference" id="css-news"
-                    value="css-language-preference">
-                  <label for="css-news" class="nw-list">CSS News</label>
-                </div>
-                <div class="radio-box">
-                  <input type="checkbox" name="coding-language-preference" id="javascript-news"
-                    value="javascript-language-preference">
-                  <label for="javascript-news" class="nw-list nw-list--mod2">Javascript News</label>
-                </div>
+      <footer class="footer">
+        <p class="footer-text">Copyright The Code Review</p>
+      </footer>
 
 
 
-                <p class="newsletter-text">Newsletter format</p>
-
-                <!-- Radio Button Newsletter Format  -->
-
-                <div class="radio-box marg-bottm">
-                  <input type="radio" name="newsletter-format" id="format-html" value="html-format">
-                  <label for="format-html" class="nw-list zero-marg">HTML</label>
-                </div>
-
-                <div class="radio-box">
-                  <input type="radio" name="newsletter-format" id="plain-text-format" value="plain-format">
-                  <label for="plain-text-format" class="nw-list nw-list--mod ">Plain text</label>
-                </div>
-              </fieldset>
-
-
-              <!-- text Area Box -->
-              <p class="newsletter-text text-mod">Other topics you's like to hear about</p>
-
-              <textarea name="user-comments" id="user-comments" class="textarea"></textarea>
-              <!-- rows="5" cols="39" -->
-
-              <!-- Submit Button  -->
-              <div>
-                <button type="submit" class="btn corner" value="submit">Sign Up</button>
-              </div>
-            </form>
-          </div>
-        </section>
-
-
-
-        <footer class="footer">
-          <p class="footer-text">Copyright The Code Review</p>
-        </footer>
-
-
-      </div>
 
     </main>
 
